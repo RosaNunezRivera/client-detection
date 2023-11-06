@@ -104,9 +104,9 @@ function getBaterryStatus() {
 
         battery.addEventListener("chargingchange", () => {
             if (batteryIsCharging = battery.charging) {
-                baterryStatus.innerText = ` Charging`
+                baterryStatus.innerText = ` Charging`;
             } else {
-                baterryStatus.innerText = ` Not charging`
+                baterryStatus.innerText = ` Not charging`;
             }
         });
     });
