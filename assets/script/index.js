@@ -76,6 +76,8 @@ function getWindowsDimensions() {
 //Get orientation
 const pageO = select(".page-orientation");
 function getorientation() {
+
+    /*
     let portrait = window.matchMedia("(orientation: portrait)");
     let orientation = '';
 
@@ -91,6 +93,7 @@ function getorientation() {
         }
     });
     pageO.innerText = `Orientation: ${orientation}`
+    */
 }
 
 //Batery Level 

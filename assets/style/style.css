@@ -20,6 +20,7 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .container {
     width: min(100% - 30px, 1080px);
+    height: 100vh;
     margin-inline: auto;
 }
 
