@@ -48,6 +48,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 2px 2px 3px rgba(85, 84, 84, 0.1);
 }
 
 
@@ -66,6 +67,7 @@ section {
     border: #26232B 2px solid;
     margin: 10px 0;
     border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(85, 84, 84, 0.1);
 }
 
 .box-headers {
