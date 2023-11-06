@@ -1,0 +1,131 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Main                                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+:root {
+    --app-body-background-color: #191720;
+    --app-header-background: #9050fd;
+    --app-header-text-color: #ffffff;
+    --app-header-a-hover: #d3d3d3;
+    --app-footer-background: #9050fd;
+    --app-footer-text-color: #ffffff;
+    --app-footer-a-hover: #d3d3d3;
+    --app-header-background: #c8221f;
+}
+
+body {
+    background-color: var(--app-body-background-color);
+    font-family: "Nunito sans", sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+    flex-direction: column;
+}
+
+main {
+    padding: 60px 0;
+}
+
+h2 {
+    color: var(--app-header-text-color);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+h3 {
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--app-header-text-color);
+}
+
+h3+h3 {
+    margin-bottom: 10px;
+}
+
+section {
+    width: 400px;
+    height: 200px;
+    padding: 10px 10 px;
+    border: #26232B 2px solid;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.box-headers {
+    color: #ffffff;
+    text-align: center;
+    background-color: #26232B;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Buttons                                              */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.button {
+    margin-top: 30px;
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #007fff;
+    box-shadow: rgba(0, 0, 0, .25) 0px 26px 30px -10px, rgba(0, 0, 0, .25) 0px 16px 10px -10px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+
+@keyframes wave {
+    from {
+        background-color: #1472ff;
+        opacity: .6;
+    }
+
+    to {
+        background-color: #1472ff;
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+section+section {
+    margin-top: 10px;
+}
+
+
+button {
+    width: 50%;
+    height: 40px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: var(--shadow);
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    transition: all 0.25s ease-in-out;
+}
+
+.button span {
+    color: var(--app-header-text-color);
+}
+
+button:hover {
+    background-color: var(--app-purple);
+}
