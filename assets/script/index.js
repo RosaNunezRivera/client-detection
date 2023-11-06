@@ -76,24 +76,11 @@ function getWindowsDimensions() {
 //Get orientation
 const pageO = select(".page-orientation");
 function getorientation() {
-
-    /*
-    let portrait = window.matchMedia("(orientation: portrait)");
-    let orientation = '';
-
-    if (window.innerHeight > window.innerWidth) {
-        orientation = 'Portrait';
+    if (window.innerWidth > window.innerHeight) {
+        pageO.innerText = 'Orientation: Landscape'
     } else {
-        orientation = 'Landscape:';
+        pageO.innerText = 'Orientation: Portrait'
     }
-
-    portrait.addEventListener("change", function (e) {
-        if (e.matches) {
-            orientation = 'Landscape:';
-        }
-    });
-    pageO.innerText = `Orientation: ${orientation}`
-    */
 }
 
 //Batery Level 
@@ -108,7 +95,7 @@ function getBaterryLevel() {
 
 //Conect HTML with BOM - Section Window
 const baterryStatus = select('.battery-status .statuchar');
-baterryStatus.innerText = `Not Available`;
+baterryStatus.innerText = ` Not Available`;
 function getBaterryStatus() {
     let batteryIsCharging = false;
 
@@ -117,9 +104,9 @@ function getBaterryStatus() {
 
         battery.addEventListener("chargingchange", () => {
             if (batteryIsCharging = battery.charging) {
-                baterryStatus.innerText = `Charging`
+                baterryStatus.innerText = ` Charging`
             } else {
-                baterryStatus.innerText = `Not charging`
+                baterryStatus.innerText = ` Not charging`
             }
         });
     });
