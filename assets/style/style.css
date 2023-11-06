@@ -1,6 +1,3 @@
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/*  Main                                                 */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 :root {
     --app-body-background-color: #191720;
     --app-header-background: #9050fd;
@@ -18,6 +15,9 @@ body {
     font-size: 16px;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Containers                                           */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .container {
     width: min(100% - 30px, 1080px);
     margin-inline: auto;
@@ -32,14 +32,22 @@ body {
     flex-direction: column;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Main                                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 main {
     padding: 60px 0;
 }
 
 h2 {
     color: var(--app-header-text-color);
+    margin-top: 0px;
+    height: 45px;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -52,14 +60,9 @@ h3 {
     color: var(--app-header-text-color);
 }
 
-h3+h3 {
-    margin-bottom: 10px;
-}
-
 section {
     width: 400px;
-    height: 200px;
-    padding: 10px 10 px;
+    height: fit-content;
     border: #26232B 2px solid;
     margin: 10px 0;
     border-radius: 10px;
@@ -76,7 +79,7 @@ section {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .button {
-    margin-top: 30px;
+    margin-top: 10px;
     width: 400px;
     height: 45px;
     border-radius: 4px;

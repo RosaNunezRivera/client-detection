@@ -69,8 +69,8 @@ const pageH = select(".page-h");
 
 //Witdh and Height 
 function getWindowsDimensions() {
-    pageW.innerText = `Window width: ${window.innerWidth} px`;
-    pageH.innerText = `Window higth: ${window.innerHeight} px`;
+    pageW.innerText = `Width: ${window.innerWidth} px`;
+    pageH.innerText = `Higth: ${window.innerHeight} px`;
 }
 
 //Get orientation
@@ -82,12 +82,12 @@ function getorientation() {
     if (window.innerHeight > window.innerWidth) {
         orientation = 'Portrait';
     } else {
-        orientation = 'Landscape';
+        orientation = 'Landscape:';
     }
 
     portrait.addEventListener("change", function (e) {
         if (e.matches) {
-            orientation = 'Landscape';
+            orientation = 'Landscape:';
         }
     });
     pageO.innerText = `Orientation: ${orientation}`
